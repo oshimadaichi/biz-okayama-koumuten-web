@@ -1,0 +1,130 @@
+@charset "utf-8";
+/*-----------------------------------------------------------------------------------------
+    サイドカテゴリ除去
+-----------------------------------------------------------------------------------------*/
+#mst_sintokudiv,
+#mst_shakakudiv,
+#mst_etcdiv,
+#mst_distansdiv,
+#mst_gallery_areadiv
+{display:none;}
+
+
+/*-----------------------------------------------------------------------------------------
+    カテゴリタブ削除
+-----------------------------------------------------------------------------------------*/
+#race_type-tabs,
+#race_type-adder
+{display:none;}
+
+
+/*
+ タイトル左寄せ
+*/
+.ttl_left{
+	display: table;
+	width:100%
+}
+.ttl_left .acf-label{
+	display: table-cell;
+	vertical-align: middle;
+	width: 7em;
+}
+
+/*
+ 非表示
+*/
+.input_none{
+	display: none !important;
+}
+
+/*
+ ACF　メッセージバー
+*/
+.acf-field-message{
+	background: #eee;
+	color: #23282d;
+}
+.acf-field-message .acf-label{
+	margin: 0;
+}
+.acf-field-message .acf-input{
+	/*display: none;*/
+}
+#normal-sortables .acf-field-message .acf-input p{
+	margin: 0 0 -10px 0;
+	font-size: 0.9em;
+	color: #7f7f7f;
+}
+.acf-field-message .acf-label label:before{
+	content: "▼";
+	margin-right: .5em;
+	display: inline-block;
+}
+.acf-field-message.no-decoration{
+    background: none;
+    color: inherit;
+    padding: 15px 12px 0 12px;
+}
+.acf-field-message.no-decoration .acf-label label:before{
+    content: "";
+    margin-right: 0;
+}
+.acf-field.no-border{
+    border: none;
+    padding-top: 10px;
+}
+/*
+ ACF　メッセージバー 注意書き
+*/
+.acf-field-message.notes{
+    margin: 0;
+    padding: 0 12px;
+    border-top: none;
+    position: relative;
+    clear: left;
+    background: #fff;
+    color: #b1630c;
+    font-weight: normal;
+    margin-top: -20px;
+}
+.acf-field-message.notes .acf-label{
+	display: none;
+}
+.acf-field-message.notes .acf-input{
+	display: block;
+}
+
+/*
+ ACF　タイトルバー　消去
+*/
+
+.postbox-container:not(#postbox-container-1) .postbox h2.hndle,
+#acf_after_title-sortables .postbox h2.hndle,
+button.handlediv,
+.acf-postbox h2.hndle
+{
+	display:none !important;
+}
+.acf-field-repeater > .acf-label,
+.acf-field-gallery div.acf-label{
+	display:none !important;
+}
+
+.acf-fields .no-title .acf-label{
+    display:none !important;
+}
+/*-----------------------------------------------------------------------------------------
+    ダッシュボード非表示
+-----------------------------------------------------------------------------------------*/
+#dashboard-widgets{
+	display: none;
+}
+
+/*-----------------------------------------------------------------------------------------
+    トップページへ表示する
+-----------------------------------------------------------------------------------------*/
+.front_page .acf-label,
+#acf-group_5844e0db43a84 .handlediv{
+	display:none;
+}
